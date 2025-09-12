@@ -1,0 +1,118 @@
+/* Estilo base do header */
+.header {
+  position: fixed;
+  top: 16px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+  padding: 0 20px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+/* Quando rolar */
+.header.scrolled {
+  background-color: #014669;
+  border-radius: 80px;
+  width: 95%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header.not-scrolled {
+  background-color: transparent;
+}
+
+/* Navbar */
+/* Logo  */
+.navbar-brand {
+  font-size: 30px !important; /* Força o tamanho do logo */
+  font-family: 'MuseoModerno', sans-serif;
+  font-weight: 600;
+  color: #3EC4F0 !important;
+  text-decoration: none;
+}
+
+
+/* Links */
+.navbar-nav .nav-link {
+  color: #f5f5f5 !important;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #3EC4F0 !important;
+}
+
+/* Botão do dropdown*/
+.navbar-nav .dropdown-toggle {
+  color: #f5f5f5 !important;
+  font-size: 14px;
+  font-family: 'MuseoModerno', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .dropdown-toggle:hover,
+.navbar-nav .dropdown-toggle:focus {
+  color: #3EC4F0 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Menu suspenso*/
+.dropdown-menu {
+  background-color: #014669 !important;
+  border-radius: 6px;
+  padding: 10px 0;
+  border: none;
+  min-width: 180px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  font-family: 'MuseoModerno', sans-serif;
+}
+
+/* Itens do dropdown */
+.dropdown-item {
+  color: #3EC4F0 !important;
+  font-size: 14px;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #222 !important;
+  color: #3EC4F0 !important;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navbar-nav .nav-link,
+  .navbar-nav .dropdown-toggle {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+}

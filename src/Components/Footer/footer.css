@@ -1,0 +1,170 @@
+footer {
+    background: linear-gradient(-38deg, #0b2f5c, #0b2f5c 18%, #0b2243 0, #0b2243 36%, #014669 0, #011f2e);
+  /*background-color: black;*/
+    padding: 20px;
+}
+
+/* Estilização da lista ordenada */
+li {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 1px;
+}
+
+/* Estilização dos links de serviços */
+.footer-services-links {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.footer-services-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-services-links a:hover {
+    text-decoration: none;
+    color: #3EC4F0;
+}
+
+/* Estilização do separador */
+.footer-separator {
+    border: none;
+    height: 1px;
+    background-color: #f5f5f5; 
+    margin: 20px 0;
+    opacity: 0.6; 
+    width: 100%;
+}
+
+/* Estilização do ícone do LinkedIn */
+.LuLinkedin {
+     color: white;
+     opacity: 0.6;
+     font-size: 30px;
+}
+
+.LuLinkedin:hover {
+    color: #0A66C2;
+    opacity: 1;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Estilização do texto de copyright */
+.footer-copyright {
+    text-align: right;
+    color: #f5f5f5;
+    opacity: 0.7;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+/* Estilização dos Links Rápidos */
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    gap: 15px;
+    margin: 0 0 0 150px;
+}
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-links a:hover {
+    text-decoration: none;
+    color: #3EC4F0;
+}
+
+/* Centraliza o conteúdo das colunas 1, 2 e 3 */
+.footer-col1{
+    display: flex;
+    color: #f5f5f5;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 80px 0 150px;
+}
+
+.footer-col2{
+    display: flex;
+    color: #f5f5f5;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 80px 0 0;
+}
+
+.footer-col3{
+    display: flex;
+    color: #f5f5f5;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-col1, .footer-col2, .footer-col3 {
+    padding: 60px 0 0 20px;
+}
+
+/* Informações de Contato */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-contact {
+    color: #f5f5f5;
+    font-size: 14px;
+}
+
+.LuPhone, .LuMail, .LuMapPin {
+    color: white;
+    font-size: 20px;
+}
+.LuPhone:hover, .LuMail:hover, .LuMapPin:hover {
+    color: #3EC4F0;
+    transition: color 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-col1, .footer-col2, .footer-col3 {
+        text-align: center;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-copyright {
+        text-align: center;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 0 0;
+    }
+}
