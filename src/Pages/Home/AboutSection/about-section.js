@@ -7,14 +7,15 @@ import { TbEyeSpark } from "react-icons/tb";
 
 
 
-
+// Componente da seção "Sobre A Zygo"
 function AboutSection() {
   return (
-    <div style={{ backgroundColor: "#f9f9f9", padding: "40px 0" }}>
+    <div style={{ backgroundColor: "#f1f3f5", padding: "40px 0" }}>
       <div className="container my-5" style={{ maxWidth: "1200px"}}>
         <Row className="about-section">
+            {/* Coluna da descrição */}
             <Col md={6} sm={12}>
-                <h2 className="about-title">Sobre A Zygo</h2>
+                <h2 className="about-title">Sobre a Zygo</h2>
                 <p className="about-text">
                     Somos uma empresa especializada em soluções tecnológicas inovadoras, comprometida em transformar
                     a forma como as empresas operam no mundo digital. Nossa equipe de especialistas combina expertise técnica
@@ -24,13 +25,16 @@ function AboutSection() {
                     Desde nossa fundação, focamos em criar soluções personalizadas que atendem às necessidades específicas de cada cliente, utilizando as mais modernas tecnologias disponíveis no mercado.
                 </p>
             </Col>
+            {/* Coluna da imagem */}
             <Col  md={6} sm={6} className="about-image">
                 <img className="img-fluid" src="/images/aboutus.jpg" alt="Sobre A Zygo" style={{ marginTop: "10px", borderRadius: "8px" }}/>
             </Col>
         </Row>
+        {/* Divisória Descrição | Missão, Visão, Valores */}
         <hr style={{ margin: "40px 0", borderTop: "3px solid #ccc" }} />
         <div className="about-metrics">
         <Row>
+            {/* Coluna da Missão */}
             <Col md={6} sm={6}>
                 <div className="missao-icon">
                     <TbTargetArrow style={{ fontSize: "50px" }} />
@@ -41,6 +45,7 @@ function AboutSection() {
                         </ul>
                 </div>
             </Col>
+            {/* Coluna da Visão */}
             <Col md={6} sm={6}>
                 <div className="visao-icon">
                     <TbEyeSpark style={{ fontSize: "50px" }} />
@@ -51,6 +56,7 @@ function AboutSection() {
                     </ul>
                 </div>
             </Col>
+            {/* Coluna dos Valores */}
             <Col md={6} sm={6}>
                 <div className="valores-icon">
                     <IoDiamondOutline style={{ fontSize: "50px" }} />
@@ -65,6 +71,7 @@ function AboutSection() {
                     </ul>
                 </div>
             </Col>
+            {/* Coluna do Objetivo */}
             <Col md={6} sm={6}>
                 <div className="objetivo-icon">
                     <GiFlagObjective style={{ fontSize: "50px" }} />

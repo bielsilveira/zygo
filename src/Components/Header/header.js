@@ -7,6 +7,7 @@ import "./header.css";
 
 
 function Header() {
+  /* Estado para mudança de estilo ao rolar a página após 50px */
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -15,6 +16,7 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  /* Navbar fixa no topo com mudança de estilo ao rolar a página em 50px */
   return (
     <Navbar
       expand="lg"

@@ -1,0 +1,16 @@
+.card-hover-effect {
+  transition: transform 0.3s ease !important;
+}
+.card-hover-effect:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.button-hover-effect {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button-hover-effect:hover {
+  transform: scale(1.05);
+}

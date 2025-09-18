@@ -7,11 +7,13 @@ import About from "./Pages/About/about";
 import Contact from "./Pages/Contact/contact";
 import Plans from "./Pages/Plans/plans";
 import Wpp from "./Components/WhastApp/wpp";
+import ScrollToTop from './Components/scrollToTop';
 
 
 function RoutesApp(){
     return(
         <BrowserRouter>
+        <ScrollToTop />
         <Wpp/>
         <Header/>
         <Routes>

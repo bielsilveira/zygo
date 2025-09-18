@@ -5,12 +5,15 @@ import { Card, Row, Col, ListGroup } from 'react-bootstrap';
 
 function ServicesSection() {
     return (
+        /* Título e Descrição da Seção de Serviços */
         <div className='services-section-container' id='services-section'>
             <h2 className='services-section-title'>Nossos Serviços</h2>
                 <p className='services-section-description'>
                     Oferecemos soluções completas em tecnologia para empresas que querem crescer e se destacar no mercado digital.
                 </p>
             <Row className="g-4">
+                {/* Seção de Serviços */}
+                {/* Serviço 1: Desenvolvimento de Software */}
                 <Col xs={12} md={4} className="d-flex justify-content-center">
                     <ServiceCard
                         title="Desenvolvimento de Software"
@@ -24,6 +27,7 @@ function ServicesSection() {
                         ]}
                     />
                 </Col>
+                {/* Serviço 2: Inteligência Artificial */}
                 <Col xs={12} md={4} className="d-flex justify-content-center">
                     <ServiceCard
                         title="Inteligência Artificial"
@@ -37,6 +41,7 @@ function ServicesSection() {
                         ]}
                     />
                 </Col>
+                {/* Serviço 3: Suporte de TI */}
                 <Col xs={12} md={4} className="d-flex justify-content-center">
                     <ServiceCard
                         title="Suporte de TI"
@@ -54,6 +59,7 @@ function ServicesSection() {
         </div>
     );
 }
+/* Componente para o Card de Serviço */
 function ServiceCard({ title, image, text, listItems }) {
     return (
         <Card style={{ width: '100%', maxWidth: '30rem', height: '100%' }}>
