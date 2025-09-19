@@ -10,6 +10,13 @@
     color: white;
 }
 
+/* Estilo do Título */
+.hero1-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 /* Estilo do Texto e do Botão */
 .hero1-text {
     font-family: 'Arial', sans-serif;
@@ -19,7 +26,7 @@
     align-items: flex-start; /* Alinha os itens (texto e botões) à esquerda */
     justify-content: flex-start; /* Alinha o conteúdo verticalmente ao topo */
     text-align: left; /* Alinha o texto à esquerda */
-    font-size: 25px;
+    font-size: 1.25rem;
     line-height: 1.5;
 }
 

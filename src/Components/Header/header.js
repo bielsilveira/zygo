@@ -53,12 +53,12 @@ function Header() {
               </NavDropdown.Item>
             </NavDropdown>*/}
 
-            <Nav.Link as={Link} to="/plans">Planos</Nav.Link>
+            {/*<Nav.Link as={Link} to="/plans">Planos</Nav.Link>*/}
             <Nav.Link as={Link} to="/contact">Contato</Nav.Link>
 
-            <Nav.Link as={Link} to="/cliente" className="d-flex align-items-center">
+            {/*<Nav.Link as={Link} to="/cliente" className="d-flex align-items-center">
             <FaUser className="me-1" /> Área do Cliente
-            </Nav.Link>
+            </Nav.Link>*/}
           </Nav>
         </Navbar.Collapse>
       </Container>

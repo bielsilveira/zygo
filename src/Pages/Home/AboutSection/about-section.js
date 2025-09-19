@@ -12,7 +12,7 @@ function AboutSection() {
   return (
     <div style={{ backgroundColor: "#f1f3f5", padding: "40px 0" }}>
       <div className="container my-5" style={{ maxWidth: "1200px"}}>
-        <Row className="about-section">
+        <Row className="about-section" id="about">
             {/* Coluna da descrição */}
             <Col md={6} sm={12}>
                 <h2 className="about-title">Sobre a Zygo</h2>
@@ -78,7 +78,7 @@ function AboutSection() {
                     <p style={{ fontSize: "20px", fontWeight: "bold" }}>Objetivo</p>
                     <ul style={{ fontSize: "14px" }}>
                         <li>Desenvolver softwares e aplicações web/mobile sob medida.</li>
-                        <li>Oferecer suporte técnico especializado N1, N2 e N3.</li>
+                        <li>Oferecer suporte técnico especializado.</li>
                         <li>Prestar consultoria estratégica para empresas que necessitam apoio tecnológico.</li>
                         <li>Integrar inteligência artificial em processos corporativos.</li>
                         <li>Expandir a presença da Zygo no mercado corporativo nacional.</li>

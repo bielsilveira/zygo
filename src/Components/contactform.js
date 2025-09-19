@@ -35,8 +35,8 @@ function ContactForm({ setAlert }) {
     }
 
     try {
-      const response = await fetch("http://localhost:5678/webhook-test/contato",
-      /*const response = await fetch("https://n8n-gabriel-pinheiro.fly.dev/webhook/contato",*/ {
+      /*const response = await fetch("http://localhost:5678/webhook-test/contato",*/
+      const response = await fetch("https://n8n-gabriel-pinheiro.fly.dev/webhook/contato", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
