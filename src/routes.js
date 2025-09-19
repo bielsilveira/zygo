@@ -8,11 +8,13 @@ import Contact from "./Pages/Contact/contact";
 import Plans from "./Pages/Plans/plans";
 import Wpp from "./Components/WhastApp/wpp";
 import ScrollToTop from './Components/scrollToTop';
+import GoogleAnalytics from './Components/analyticsgoogle';
 
 
 function RoutesApp(){
     return(
         <BrowserRouter>
+        <GoogleAnalytics />
         <ScrollToTop />
         <Wpp/>
         <Header/>
