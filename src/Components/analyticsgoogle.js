@@ -9,7 +9,7 @@ const GoogleAnalytics = () => {
   useEffect(() => {
     // Verifica se o gtag está disponível antes de chamar
     if (window.gtag) {
-      window.gtag('config', 'G-MTS365EBS9', {
+      window.gtag('config', 'G-MST3G5EB0S', {
         page_path: location.pathname + location.search,
       });
     } else {
